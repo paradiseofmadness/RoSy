@@ -1,5 +1,5 @@
             .text                   // Programm ins text segment
-            .globl ggt              // "ggt" extern sichtbar
+            .globl main             // "main" extern sichtbar
 main:       SUBI SP, SP, #8         // stack frame anlegen
             STUR LR, [SP, #0]       // Rücksprungadresse retten
             LDUR A0, a              // A0 = a = x
